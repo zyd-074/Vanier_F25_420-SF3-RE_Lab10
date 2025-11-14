@@ -33,3 +33,7 @@
   - `COPY/FIND/REPLACE has been pressed` should be printed in the console.
 - If `Small`, `Medium` or `Large` got pressed:
   - `User switched to SMALL/MEDIUM/LARGE` should be printed in the console.
+- If mouse right-clicked in the empty area: 
+  - A popup with `Help` & `Inspect` should show
+    - If `Help` got pressed, `HELP has been pressed` should be printed in the console.
+    - If `Inspect` got pressed, `INSPECT has been pressed` should be printed in the console.

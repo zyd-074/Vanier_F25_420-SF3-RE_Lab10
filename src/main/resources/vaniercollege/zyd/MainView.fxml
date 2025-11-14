@@ -12,7 +12,7 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vaniercollege.zyd.MainController">
    <center>
-      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" stylesheets="@style.css" />
+      <Pane fx:id="mainPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" stylesheets="@style.css" />
    </center>
    <top>
       <MenuBar minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@style.css" BorderPane.alignment="CENTER">

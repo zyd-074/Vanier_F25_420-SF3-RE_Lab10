@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyCombination;
+import javafx.scene.input.MouseButton;
+import javafx.scene.layout.Pane;
 import javafx.stage.FileChooser;
 import javafx.stage.Popup;
 
@@ -29,6 +31,7 @@ public class MainController {
     @FXML private MenuItem saveItem;
     @FXML private Menu searchMenu;
     @FXML private RadioMenuItem smallItem;
+    @FXML private Pane mainPane;
 
     @FXML
     void handleClose(ActionEvent event) {
@@ -127,5 +130,22 @@ public class MainController {
         newItem.setAccelerator(KeyCombination.keyCombination("Ctrl+N"));
         openItem.setAccelerator(KeyCombination.keyCombination("Ctrl+O"));
         saveItem.setAccelerator(KeyCombination.keyCombination("Ctrl+S"));
+
+        // Context Menu (Part 4)
+        ContextMenu popup = new ContextMenu();
+        MenuItem help = new MenuItem("Help");
+        MenuItem inspect = new MenuItem("Inspect");
+        popup.getItems().addAll(help, inspect);
+        mainPane.setOnMouseClicked(event -> {
+           if (event.getButton() == MouseButton.SECONDARY) {
+               popup.show(mainPane, event.getScreenX() - 50, event.getScreenY() - 25);
+           }
+        });
+        help.setOnAction(event -> {
+            System.out.println("HELP has been pressed");
+        });
+        inspect.setOnAction(event -> {
+            System.out.println("INSPECT has been pressed");
+        });
     }
 }
