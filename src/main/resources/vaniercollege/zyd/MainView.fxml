@@ -7,7 +7,6 @@
 <?import javafx.scene.control.RadioMenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.ToggleGroup?>
-<?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 
@@ -20,10 +19,7 @@
         <menus>
           <Menu style="-fx-stroke: -fx-text-base-color;" text="_File">
             <items>
-              <MenuItem id="newItem" fx:id="newItem" mnemonicParsing="false" onAction="#handleNew" text="New">
-                     <accelerator>
-                        <KeyCodeCombination alt="UP" code="N" control="ANY" meta="UP" shift="UP" shortcut="UP" />
-                     </accelerator></MenuItem>
+              <MenuItem id="newItem" fx:id="newItem" mnemonicParsing="false" onAction="#handleNew" text="New" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem id="openItem" fx:id="openItem" mnemonicParsing="false" onAction="#handleOpen" text="Open..." />
                   <MenuItem id="closeItem" fx:id="closeItem" mnemonicParsing="false" onAction="#handleClose" text="Close" />
