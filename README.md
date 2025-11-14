@@ -5,7 +5,7 @@
 - Lab: 10
 
 ## Note:
-- This lab was built to learn how to sue SceneBuilder to design a GUI containing a MenuBar and how to handle the items.
+- This lab was built to learn how to use SceneBuilder to design a GUI containing a MenuBar and how to handle the items.
 - All event handlers are **NOT** actually handling actions but ONLY printing to the console.
 - Save and Open files handlers technically should **only** print the selected file's path.
 - Save file will NOT create an actual file and should NOT overwrite any selected file. To avoid any lose of data, please DO NOT REPLACE any IMPORTANT file during the test.
