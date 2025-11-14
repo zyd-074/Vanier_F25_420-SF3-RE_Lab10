@@ -4,7 +4,9 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 
@@ -38,11 +40,15 @@
             </items>
           </Menu>
           <Menu text="_Setting">
-            <items>
-              <MenuItem fx:id="smallItem" mnemonicParsing="false" onAction="#handleSizeSmall" text="Small" />
-                  <MenuItem fx:id="mediumItem" mnemonicParsing="false" onAction="#handleSizeMedium" text="Medium" />
-                  <MenuItem fx:id="largeItem" mnemonicParsing="false" onAction="#handleSizeLarge" text="Large" />
-            </items>
+               <items>
+                  <RadioMenuItem fx:id="smallItem" mnemonicParsing="false" onAction="#handleSizeSmall" text="Small">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="sizeGroup" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <RadioMenuItem fx:id="mediumItem" mnemonicParsing="false" onAction="#handleSizeMedium" selected="true" text="Medium" toggleGroup="$sizeGroup" />
+                  <RadioMenuItem fx:id="largeItem" mnemonicParsing="false" onAction="#handleSizeLarge" text="Large" toggleGroup="$sizeGroup" />
+               </items>
           </Menu>
         </menus>
       </MenuBar>
