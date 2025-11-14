@@ -8,40 +8,40 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 
-<BorderPane xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vaniercollege.zyd.MainController">
    <center>
       <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" style="-fx-stroke: -fx-text-base-color;: 1;" stylesheets="@style.css" />
    </center>
    <top>
-      <MenuBar minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" BorderPane.alignment="CENTER">
+      <MenuBar minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@style.css" BorderPane.alignment="CENTER">
         <menus>
           <Menu style="-fx-stroke: -fx-text-base-color;" text="_File">
             <items>
-              <MenuItem id="newItem" fx:id="newItem" mnemonicParsing="false" text="New" />
+              <MenuItem id="newItem" fx:id="newItem" mnemonicParsing="false" onAction="#handleNew" text="New" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem id="openItem" fx:id="openItem" mnemonicParsing="false" text="Open..." />
-                  <MenuItem id="closeItem" fx:id="closeItem" mnemonicParsing="false" text="Close" />
-                  <MenuItem id="saveItem" fx:id="saveItem" mnemonicParsing="false" text="Save As..." />
+                  <MenuItem id="openItem" fx:id="openItem" mnemonicParsing="false" onAction="#handleOpen" text="Open..." />
+                  <MenuItem id="closeItem" fx:id="closeItem" mnemonicParsing="false" onAction="#handleClose" text="Close" />
+                  <MenuItem id="saveItem" fx:id="saveItem" mnemonicParsing="false" onAction="#handleSave" text="Save As..." />
             </items>
           </Menu>
           <Menu text="_Edit">
             <items>
-                  <CheckMenuItem fx:id="gridItem" mnemonicParsing="false" text="Use GridLines" />
+                  <CheckMenuItem fx:id="gridItem" mnemonicParsing="false" onAction="#handleGrid" text="Use GridLines" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-              <MenuItem fx:id="copyItem" mnemonicParsing="false" text="Copy" />
+              <MenuItem fx:id="copyItem" mnemonicParsing="false" onAction="#handleCopy" text="Copy" />
                   <Menu fx:id="searchMenu" mnemonicParsing="false" text="Search">
                     <items>
-                      <MenuItem fx:id="findItem" mnemonicParsing="false" text="Find" />
-                        <MenuItem fx:id="replaceItem" mnemonicParsing="false" text="Replace" />
+                      <MenuItem fx:id="findItem" mnemonicParsing="false" onAction="#handleFind" text="Find" />
+                        <MenuItem fx:id="replaceItem" mnemonicParsing="false" onAction="#handleReplace" text="Replace" />
                     </items>
                   </Menu>
             </items>
           </Menu>
           <Menu text="_Setting">
             <items>
-              <MenuItem fx:id="smallItem" mnemonicParsing="false" text="Small" />
-                  <MenuItem fx:id="mediumItem" mnemonicParsing="false" text="Medium" />
-                  <MenuItem fx:id="largeItem" mnemonicParsing="false" text="Large" />
+              <MenuItem fx:id="smallItem" mnemonicParsing="false" onAction="#handleSizeSmall" text="Small" />
+                  <MenuItem fx:id="mediumItem" mnemonicParsing="false" onAction="#handleSizeMedium" text="Medium" />
+                  <MenuItem fx:id="largeItem" mnemonicParsing="false" onAction="#handleSizeLarge" text="Large" />
             </items>
           </Menu>
         </menus>
