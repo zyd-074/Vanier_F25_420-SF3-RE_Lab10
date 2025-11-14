@@ -1,16 +1,16 @@
-**Info:**
+## Info:
 - School: Vanier College
 - Course: 420-SF3-RE
 - Semester: Fall 25
 - Lab: 10
 
-**Note:**
+## Note:
 - This lab was built to learn how to sue SceneBuilder to design a GUI containing a MenuBar and how to handle the items.
 - All event handlers are **NOT** actually handling actions but ONLY printing to the console.
 - Save and Open files handlers technically should **only** print the selected file's path.
 - Save file will NOT create an actual file and should NOT overwrite any selected file. To avoid any lose of data, please DO NOT REPLACE any IMPORTANT file during the test.
 
-**Handlers Explaination**:
+## Handlers Explaination:
 - Initialized as:
   - All functions should work except `Close` & `Save`
 - If `New` got pressed:
