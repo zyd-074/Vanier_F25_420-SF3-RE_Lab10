@@ -9,45 +9,24 @@ import javafx.stage.Popup;
 
 import java.io.File;
 
+/**
+ * @author Yu Duo Zhang (2480549)
+ * https://github.com/zyd-074/Vanier_F25_420-SF3-RE_Lab10.git
+ */
 public class MainController {
-    @FXML
-    public ToggleGroup sizeGroup;
-
-    @FXML
-    private MenuItem closeItem;
-
-    @FXML
-    private MenuItem copyItem;
-
-    @FXML
-    private MenuItem findItem;
-
-    @FXML
-    private CheckMenuItem gridItem;
-
-    @FXML
-    private RadioMenuItem largeItem;
-
-    @FXML
-    private RadioMenuItem mediumItem;
-
-    @FXML
-    private MenuItem newItem;
-
-    @FXML
-    private MenuItem openItem;
-
-    @FXML
-    private MenuItem replaceItem;
-
-    @FXML
-    private MenuItem saveItem;
-
-    @FXML
-    private Menu searchMenu;
-
-    @FXML
-    private RadioMenuItem smallItem;
+    @FXML public ToggleGroup sizeGroup;
+    @FXML private MenuItem closeItem;
+    @FXML private MenuItem copyItem;
+    @FXML private MenuItem findItem;
+    @FXML private CheckMenuItem gridItem;
+    @FXML private RadioMenuItem largeItem;
+    @FXML private RadioMenuItem mediumItem;
+    @FXML private MenuItem newItem;
+    @FXML private MenuItem openItem;
+    @FXML private MenuItem replaceItem;
+    @FXML private MenuItem saveItem;
+    @FXML private Menu searchMenu;
+    @FXML private RadioMenuItem smallItem;
 
     @FXML
     void handleClose(ActionEvent event) {
