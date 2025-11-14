@@ -10,6 +10,8 @@ import java.io.IOException;
 /**
  * @author Yu Duo Zhang (2480549)
  * https://github.com/zyd-074/Vanier_F25_420-SF3-RE_Lab10.git
+ *
+ * NOTE: Please read the README.md from the repository BEFORE TESTING OPEN AND SAVE FILE functions.
  */
 public class Main extends Application {
     @Override

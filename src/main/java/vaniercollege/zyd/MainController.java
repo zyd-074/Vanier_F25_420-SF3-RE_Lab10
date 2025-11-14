@@ -12,6 +12,8 @@ import java.io.File;
 /**
  * @author Yu Duo Zhang (2480549)
  * https://github.com/zyd-074/Vanier_F25_420-SF3-RE_Lab10.git
+ *
+ * NOTE: Please read the README.md from the repository BEFORE TESTING OPEN AND SAVE FILE functions.
  */
 public class MainController {
     @FXML public ToggleGroup sizeGroup;
@@ -34,7 +36,7 @@ public class MainController {
         openItem.setDisable(false);
         closeItem.setDisable(true);
         saveItem.setDisable(true);
-        System.out.println("User closed the files");
+        System.out.println("User closed the file");
     }
 
     @FXML
@@ -44,7 +46,7 @@ public class MainController {
 
     @FXML
     void handleFind(ActionEvent event) {
-        System.out.println("Find has been pressed");
+        System.out.println("FIND has been pressed");
     }
 
     @FXML
@@ -118,6 +120,7 @@ public class MainController {
     }
 
     public void initialize() {
+        // Initialize shortcuts for items in File Menu
         closeItem.setDisable(true);
         saveItem.setDisable(true);
         closeItem.setAccelerator(KeyCombination.keyCombination("Ctrl+C"));
